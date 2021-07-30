@@ -58,7 +58,7 @@ function WeatherByDay() {
                   </div>
                   <div className="  col-md-6 col-xl-4  col-sm-12 p-3">
                     <div className="bg-white p-2 rounded-3 h-100">
-                      <p className="fs-5 text-black-50">Atmospheric pressure </p>
+                      <p className="fs-5 text-black-50">Pressure </p>
                       <div className="text-center">
                         <FaThermometerEmpty className="icon-color icon-size" />
                         <p className="fs-3 text-muted fw-bold text-center">{data?.current?.pressure} hPa</p>

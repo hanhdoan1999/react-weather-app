@@ -15,7 +15,6 @@ function* handleFindCity(action) {
         const city = yield call(findCity,action.nameCity) ;
         const nameCity = city.name;
         const data = yield call(fetchData,city?.coord.lat,city?.coord.lon) ;
-        console.log('action', data);
         yield put({type:FIND_CITY_SUCCESS, data , nameCity});
       }
       catch(error) {

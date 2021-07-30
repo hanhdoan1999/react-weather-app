@@ -54,7 +54,7 @@ function SideBar() {
               <div className="fs-2 fw-bold lh-sm text-dack">
                 {nameCity}
               </div>
-              <div className="fs-1 fw-bold lh-lg">
+              <div className="fs-1 fw-bold">
                 {data?.current?.temp}°C
               </div>
               <div className="fs-5 lh-lg">

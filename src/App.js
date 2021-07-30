@@ -33,7 +33,6 @@ function App() {
   ])
 
   const handleChangeTab = (el) => {
-    console.log(el);
     setMode(mode.map(item => item.index === el.index ? { ...item, value: true } : { ...item, value: false }))
   }
 
@@ -43,15 +42,14 @@ function App() {
 
   return (
     <>
-      <div className=" container-fluid p-5 d-flex justify-content-center align-items-center" style={{ backgroundColor: '#d6d7da' }}>
-        <div className="w-100">
+      <div className="res container position-absolute overflow-hidden" style={{height:'90vh'}}>
           <div className="row">
-            <div className="col-md-3 col-sm-12 bg-white p-5">
+            <div className="col-md-3 col-sm-12 bg-white p-4">
               <Suspense fallback={<div className="text-center my-5">Loading...</div>}>
                 <SideBar />
               </Suspense>
             </div>
-            <div className="col-md-9 col-sm-12 p-5" style={{ backgroundColor: '#f6f6f8' }}>
+            <div className=" res col-md-9 col-sm-12 p-4 overflow-auto" style={{ backgroundColor: '#f6f6f8', height:'90vh' }}>
               <div className="wrap">
                 {error !== "" &&
                   <div class="alert alert-danger" role="alert">
@@ -78,7 +76,6 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

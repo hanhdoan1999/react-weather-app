@@ -6,8 +6,6 @@ import { useState } from 'react';
 function WeatherByWeek() {
 
   const data = useSelector(state => state.weatherData.data);
-  console.log('data', data);
-
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 
@@ -20,7 +18,6 @@ function WeatherByWeek() {
 
   const handleShowDetail = (el, index) => {
     setItem(el);
-    console.log('item', item);
   }
 
 

@@ -12,7 +12,6 @@ function WeatherByHour() {
     const gethours = data?.hourly.map(el => [...hours, timeFormat(el.dt)]);
     const gettemp = data?.hourly.map(el => [...temp, el.temp]);
     const getFeelslike = data?.hourly.map(el => [...feel, el.feels_like]);
-    console.log('gettemp', getFeelslike.flat());
 
     return (
         <div className="bg-white p-2 mt-2 rounded-3">

@@ -9,6 +9,16 @@ code {
     monospace;
 }
 
+#root {
+  background-color: #d6d7da;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+
 .icon-size {
   font-size: 50px;
   text-align: center;
@@ -22,4 +32,10 @@ code {
   color: rgb(0 0 0 / 26%) !important;
 }
 
-
+@media only screen and (max-width: 768px) {
+  #root, .res {
+    height: auto !important;
+    position: initial !important;
+   
+  }
+}
